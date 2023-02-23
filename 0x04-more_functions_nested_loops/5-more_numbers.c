@@ -14,9 +14,11 @@ void more_numbers(void)
 		for (j = 0; j <= 14; j++)
 		{
 			char c = j + '0';
+
 			if (j >= 10)
 			{
 				char one = '0' + 1;
+
 				_putchar(one);
 				c = (j - 10) + '0';
 			}
