@@ -7,7 +7,7 @@
 
 int main(void)
 {
-/*	int i; */
+/*	int i; */alx-low_level_programming
 
 	printf("Infinite loop incoming :(\n");
 /*
@@ -15,7 +15,7 @@ int main(void)
 *
 *	while (i < 10)
 *	{
-*	putchar(i);
+*		putchar(i);
 *	}
 */
 	printf("Inifinite loop avoided! \\o/\n");
