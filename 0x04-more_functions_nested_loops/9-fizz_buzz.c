@@ -8,6 +8,7 @@
 int main(void)
 {
 	int i;
+
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 15 == 0)
@@ -28,5 +29,6 @@ int main(void)
 		}
 		printf(" ");
 	}
+	printf("\n");
 	return (0);
 }
