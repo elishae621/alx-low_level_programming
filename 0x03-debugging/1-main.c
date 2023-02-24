@@ -7,7 +7,7 @@
 
 int main(void)
 {
-/*	int i; */alx-low_level_programming
+/*	int i; */
 
 	printf("Infinite loop incoming :(\n");
 /*
