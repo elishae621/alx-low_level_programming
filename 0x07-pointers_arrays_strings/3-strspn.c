@@ -17,12 +17,12 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		int flag = 0;
 
-		for (i = 0; *(pre + i) != 0; i++)
+		for (i = 0; *(accept + i) != 0; i++)
 		{
-			if (*(s + len) == *(pre + i))
+			if (*(s + len) == *(accept + i))
 			{
 				len++;
-				flag = 1
+				flag = 1;
 			}
 		}
 		if (flag == 0)
