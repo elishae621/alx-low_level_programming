@@ -14,10 +14,10 @@ int main(int argc, char *argv[])
 	{
 		int i = 1, sum = 0, value;
 
-		while(i < argc)
+		while (i < argc)
 		{
 			value = atoi(argv[i]);
-			if(isdigit(value) == 0)
+			if (isdigit(value) == 0)
 			{
 				sum += value;
 			}
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 			}
 			i++;
 		}
-		printf("%d\n", sum); 
+		printf("%d\n", sum);
 		return (0);
 	}
 	else
