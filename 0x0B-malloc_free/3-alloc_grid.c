@@ -27,7 +27,7 @@ int **alloc_grid(int width, int height)
 		{
 			int k = 0;
 
-			for (k= 0; k < i; k++)
+			for (k = 0; k < i; k++)
 				free(buffer[k]);
 			free(buffer);
 			return (NULL);
