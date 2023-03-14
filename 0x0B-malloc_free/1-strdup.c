@@ -13,6 +13,9 @@ char *_strdup(char *str)
 	char *dup;
 	int size = 0;
 
+	if (str == NULL)
+		return (NULL);
+
 	while (str[size++])
 		;
 
