@@ -12,7 +12,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned long int i = 0;
 	char *concat;
-	unsigned long int size1 = 0, size2 = 0, concat_size;
+	unsigned long int size1 = 0, size2 = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -24,8 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[size2++])
 		;
 
-	concat_size = sizeof(char) * (size1 + size2 - 1);
-	concat = malloc(concat_size);
+	concat = malloc(sizeof(char) * (size1 + size2));
 
 	if (concat == NULL)
 		return (NULL);
