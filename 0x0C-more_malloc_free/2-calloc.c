@@ -10,38 +10,17 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int **buffer;
-	unsigned int i = 0, j = 0;
+	char *x;
+	unsigned int i;
 
-	if ((size <= 0) || (nmemb <= 0))
+	if (size == 0 || nmemb == 0)
 		return (NULL);
-
-	buffer = malloc(sizeof(unsigned int *) * nmemb);
-
-	if (buffer == NULL)
+	x = malloc(size * nmemb);
+	if (x == NULL)
 		return (NULL);
-
-	while (i < nmemb)
+	for (i = 0; i < nmemb * size; i++)
 	{
-		buffer[i] = malloc(sizeof(unsigned int) * size);
-		if (buffer[i] == NULL)
-		{
-			unsigned int k = 0;
-
-			for (k = 0; k < i; k++)
-				free(buffer[k]);
-			free(buffer);
-			return (NULL);
-		}
-		i++;
+		x[i] = '\0';
 	}
-
-	for (i = 0; i < nmemb; i++)
-	{
-		for (j = 0; j < size; j++)
-		{
-			buffer[i][j] = 0;
-		}
-	}
-	return (buffer);
+	return (x);
 }
