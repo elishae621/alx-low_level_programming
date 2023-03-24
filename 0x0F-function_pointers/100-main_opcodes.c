@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main - check the code 
+ * main - check the code
  * @argc: amount of args
  * @argv: argumbers
  * Return: 1 if an error occured, 0 otherwis
