@@ -7,7 +7,7 @@
  * @separator: comma to be printed between numbers
  * @n: number of strings passed to function
  */
-void prin_strings(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list str_list;
 	unsigned int i;
@@ -23,7 +23,7 @@ void prin_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", "(nil)");
 		else
 			printf("%s", s);
-		
+
 		if (separator && i < n - 1)
 			printf("%s", separator);
 	}
