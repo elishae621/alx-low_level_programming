@@ -1,5 +1,6 @@
 #include <stddef.h>
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * read_textfile - reads a text file and prints it to the POSIX standard output
@@ -23,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	while ((c = fgetc(file)) != EOF && n < letters)
 	{
-		printed =  printf("%c", c);
+		printed =  write(1, &c, 1);
 		if (printed != 1)
 			return (0);
 		n += printed;
