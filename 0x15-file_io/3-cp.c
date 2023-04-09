@@ -1,10 +1,17 @@
 #include "main.h"
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <stdio.h>
+
 /**
- *  * cp - copies src to desinations
- *   * @file_to: the destination file
- *    * @file_from: the source file
- *     *
- *      * Return: integer
+ * cp - copies src to desinations
+ * @file_to: the destination file
+ * @file_from: the source file
+ *
+ * Return: integer
  */
 int cp(char *file_to, char *file_from)
 {
